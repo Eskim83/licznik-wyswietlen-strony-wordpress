@@ -101,9 +101,9 @@ class eskim_pl_post_count_widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array( 
 			'classname' => 'eskim_pl_post_count_widget',
-			'description' => 'Licznik wizyt',
+			'description' => 'Licznik wyświetleń',
 		);
-		parent::__construct( 'eskim_pl_post_count_widget', 'Licznik wizyt', $widget_ops );
+		parent::__construct( 'eskim_pl_post_count_widget', 'Licznik wyświetleń', $widget_ops );
 	}
 
 	public function widget( $args, $instance ) {
@@ -120,10 +120,10 @@ endif;
 if ( !function_exists('eskim_pl_post_count_clear') ) :
 function eskim_pl_post_count_clear() {
 
-  global $wpdb;
-  $table_name = $wpdb->prefix . 'eskim_pl_post_count';
+	global $wpdb;
+	$table_name = $wpdb->prefix . 'eskim_pl_post_count';
 
-  $sql = "DELETE * FROM $table_name";
+	$sql = "DELETE * FROM $table_name";
 	return $wpdb->query ($sql);
 }
 
