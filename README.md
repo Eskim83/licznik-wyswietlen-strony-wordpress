@@ -17,7 +17,7 @@ Skrypt liczy wyświetlenia danej strony
 
 -- INSTALACJA --
 
-Należy utworzyć katalog licznik-wyswietlen-strony-wordpress w katalogu z pluginami WordPress i przenieść do niego skrypt. Następnie możemy uruchomić wtyczkę z poziomu menu z pluginami WordPress.
+Należy przenieść wtyczkę do katalogu z pluginami w WordPress i uruchomić z poziomu pluginów w WordPress.
 
 
 -- ODPOWIEDZIALNOŚĆ --
